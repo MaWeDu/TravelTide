@@ -1,18 +1,36 @@
+# Lokale Python-Umgebungen und Caches
 .venv/
 venv/
 __pycache__/
-*.pyc
+*.py[cod]
 .ipynb_checkpoints/
-data/
-.data/
-backups/
-alt/
-.backups/
-.alt/
+
+# Lokale Zugangsdaten und Umgebungsvariablen
 secrets.json
-PowerBI/
-data_preprocessing/
-Abgabe/
-src/
-Tableau/
+.env
+.env.*
+!.env.example
+
+# Daten werden separat bereitgestellt
+/data/
+/.data/
+/data_preprocessing/
+
+# Sicherungen und nicht betrachtete BI-Projekte
+/backups/
+/.backups/
+/alt/
+/.alt/
+/PowerBI/
+/Tableau/
+
+# Archive und BI-Binärdateien; Abgabedokumente bleiben zulässig
 *.zip
+*.pbix
+*.pbit
+*.twb
+*.twbx
+*.hyper
+
+# src/ enthält die notwendige, versionierte Feature-Baseline.
+# Abgabe/ enthält die versionierten Abschlussdokumente.
